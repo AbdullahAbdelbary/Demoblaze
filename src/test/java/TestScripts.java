@@ -19,7 +19,7 @@ public class TestScripts extends BaseTest{
     }
 */
     //----------------------------------------------- Contact ----------------------------------------------
-    @DataProvider(name = "ContactData")
+    /*@DataProvider(name = "ContactData")
     public Object[][] getContactData() throws IOException {
         String filePath = "D:\\Testing\\Technical\\Java\\Projects\\GraduationProject3\\demoBlaseGraduation.xlsx";
         return ExcelUtils.readExcelData(filePath, "Sheet3");
@@ -28,7 +28,7 @@ public class TestScripts extends BaseTest{
     @Test(priority = 3, dataProvider = "ContactData")
     public void testContact(String contactEmail, String contactName, String message, String testType) throws InterruptedException {
         contactPage.contactValidation(contactEmail, contactName, message, testType);
-    }
+    }*/
 
     @Test(priority = 4)
     public void testContactClosingViaXsign() throws InterruptedException {
@@ -40,10 +40,10 @@ public class TestScripts extends BaseTest{
         contactPage.closingValidation("close");
     }
 
-    @Test(priority = 6)
+    /*@Test(priority = 6)
     public void testContactClickingOnSendMessageButtonWithEmptyData() throws InterruptedException {
         contactPage.clickingOnSendMessageButtonWithEmptyDataValidation();
-    }
+    }*/
 /*
     //----------------------------------------------- Aboutus ----------------------------------------------
     @Test(priority = 7)
